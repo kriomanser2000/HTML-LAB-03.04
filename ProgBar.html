@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+</head>
+<style>
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(39, 38, 39);
+    margin: 0;
+    padding: 0;
+}
+.cont 
+{
+    position: relative;
+    margin: 10vh auto;
+    background: whitesmoke;
+    width: 80%;
+    max-width: 768px;
+    height: auto;
+    border: 2px solid whitesmoke;
+    box-shadow: 0 0 50px 0 white;
+    padding: 20px;
+}
+.img11 
+{
+    width: 100%;
+    height: auto;
+}
+.progBar 
+{
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 4px;
+    border: 2px solid #0e37db3d;
+    margin-top: 20px;
+}
+.progBr 
+{
+    height: 100%;
+    width: 40%;
+    background-color: #0e37db3d;
+    border-radius: 2px;
+}
+.txtIN1
+{
+    position: absolute;
+    top: 63%;
+    right: 75%;
+    font-weight: 600;
+    font-size: 18px;
+}
+.txtIN2
+{
+    position: absolute;
+    top: 63%;
+    right: 5%;
+    font-weight: 300;
+    font-size: 18px;
+}
+h1 
+{
+    margin-top: 20px;
+}
+button 
+{
+    background: rgb(56, 56, 193);
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    max-width: 768px; 
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    cursor: pointer;
+    margin-top: 20px;
+}
+</style>
+<body>
+    <div class="cont">
+        <img class="img11" src="./icons/loading.png" alt="LOAD.png">
+        <div class="progBar">
+            <div class="progBr"></div>
+            <p class="txtIN1">UPLOADING 40%</p>
+            <p class="txtIN2">About 23 minutes remaining</p>
+        </div>
+        <h1>Title of Video</h1>
+        <p style="position: absolute; top: 82%;">* Your video is still uploading. Please keep this page open untilit`s done.</p>
+        <button>DONE</button>
+    </div>
+</body>
+</html>
